@@ -1,0 +1,53 @@
+# Publish this page to GitHub Pages on every push to main.
+#
+# The page is rebuilt here from site/content.py rather than published straight
+# from the committed index.html, so filling in a deliverable's url and pushing
+# is enough -- you never have to remember to run the build first. The result is
+# the same either way; this just removes the step you can forget.
+name: Pages
+
+on:
+  push:
+    branches: [main]
+  # Lets you publish from a feature branch: Actions -> Pages -> Run workflow.
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Let a running deploy finish rather than cancelling it half-published.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Jinja2
+        run: pip install -r site/requirements.txt
+
+      - name: Build the page
+        run: python site/build.py
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
