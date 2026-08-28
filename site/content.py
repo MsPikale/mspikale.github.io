@@ -44,7 +44,7 @@ SEMESTERS = [
                 "due": "Aug 31",
                 "documents": [
                     {"label": "Plan", "url": "https://docs.google.com/document/d/1X2HVOF_cRx9IzFaK1CwSO_rhBEuO-SpnqIVeKuTrdmY/edit?usp=sharing"},
-                    {"label": "Presentation", "url": ""},
+                    {"label": "Presentation", "url": "docs/RootView_Project_Plan.pptx"},
                 ],
             },
             {
