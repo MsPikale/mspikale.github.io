@@ -65,11 +65,11 @@ SEMESTERS = [
                     "Complete the Test Plan",
                 ],
                 "documents": [
-                    {"label": "Requirement", "url": ""},
-                    {"label": "Design", "url": ""},
-                    {"label": "Test", "url": ""},
-                    {"label": "Presentation", "url": ""},
-                    {"label": "Progress Evaluation", "url": ""},
+                    {"label": "Requirement", "url": "docs/requirement_docs-1.pdf"},
+                    {"label": "Design", "url": "docs/design_docs-1.pdf"},
+                    {"label": "Test", "url": "docs/test_docs-1.pdf"},
+                    {"label": "Presentation", "url": "docs/milestone_one.pdf"},
+                    {"label": "Progress Evaluation", "url": "docs/progress_eval_one copy-1.pdf"},
                 ],
             },
             {
