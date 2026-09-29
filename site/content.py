@@ -68,7 +68,7 @@ SEMESTERS = [
                     {"label": "Requirement", "url": "docs/requirement_docs-1.pdf"},
                     {"label": "Design", "url": "docs/design_docs-1.pdf"},
                     {"label": "Test", "url": "docs/test_docs-1.pdf"},
-                    {"label": "Presentation", "url": "docs/milestone_one.pdf"},
+                    {"label": "Presentation", "url": "docs/milestone_one.pptx"},
                     {"label": "Progress Evaluation", "url": "docs/progress_eval_one copy-1.pdf"},
                 ],
             },
