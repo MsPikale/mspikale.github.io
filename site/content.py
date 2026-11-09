@@ -86,8 +86,8 @@ SEMESTERS = [
                     "Initial kernel-version testing",
                 ],
                 "documents": [
-                    {"label": "Presentation", "url": ""},
-                    {"label": "Progress Evaluation", "url": ""},
+                    {"label": "Presentation", "url": "docs/milestone_two.pptx"},
+                    {"label": "Progress Evaluation", "url": "docs/progress_eval_two-1.pdf"},
                 ],
             },
             {
